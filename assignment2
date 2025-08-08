@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced HTML5 Content & Forms - Learning Page</title>
+  </head>
+  <body>
+    <!-- Main Content -->
+    <main>
+      <!-- Lists Section -->
+      <section id="lists">
+        <h2>HTML5 Lists - Organizing Content</h2>
+
+        <h3>FRUITS</h3>
+        <ul>
+          <li>Mango</li>
+          <li>pineapple</li>
+          <li>oranges</li>
+          <li>lemon</li>
+          <li>apple</li>
+        </ul>
+
+        <h3>Ordered List - Learning Steps</h3>
+        <ol>
+          <li>Learn HTML basics</li>
+          <li>Master semantic elements</li>
+          <li>Practice with forms</li>
+          <li>Add CSS styling</li>
+          <li>Include JavaScript functionality</li>
+        </ol>
+
+        <h3>Definition List - Web Technologies</h3>
+        <dl>
+          <dt>HTML5</dt>
+          <dd>
+            HyperText Markup Language version 5 - the standard markup language
+            for creating web pages
+          </dd>
+
+          <dt>CSS3</dt>
+          <dd>
+            Cascading Style Sheets version 3 - used for styling and layout of
+            web pages
+          </dd>
+
+          <dt>JavaScript</dt>
+          <dd>
+            A programming language that adds interactivity and dynamic behavior
+            to web pages
+          </dd>
+        </dl>
+      </section>
+
+      <!-- Tables Section -->
+      <section id="tables">
+        <h2>HTML5 Tables - Data Organization</h2>
+
+        <h3>Student Grades Table</h3>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Student Name</th>
+              <th>Subject</th>
+              <th>Grade</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Smith</td>
+              <td>MATHEMATICS</td>
+              <td>A+</td>
+              <td>Passed</td>
+            </tr>
+            <tr>
+              <td>Sarah Johnson</td>
+              <td>ENGLISH</td>
+              <td>A</td>
+              <td>Passed</td>
+            </tr>
+            <tr>
+              <td>Mike Davis</td>
+              <td>KISWAHILI</td>
+              <td>B+</td>
+              <td>Passed</td>
+            </tr>
+            <tr>
+              <td>Emily Wilson</td>
+              <td>SCIENCE</td>
+              <td>A-</td>
+              <td>Passed</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2"><strong>Class Average</strong></td>
+              <td><strong>A-</strong></td>
+              <td><strong>100% Pass Rate</strong></td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <h3>SCHOOL TIMETABLE</h3>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>9:00 AM - 10:15AM</td>
+              <td>MATHEMATICS</td>
+              <td>ENGLISH</td>
+              <td>SCIENCE</td>
+              <td>ENGLISH</td>
+              <td>KISWAHILI</td>
+            </tr>
+            <tr>
+              <td>10:30 AM - 12:30 PM</td>
+              <td>ENGLISH</td>
+              <td>MATHEMATICS</td>
+              <td>KISWAHILI</td>
+              <td>SCIENCE</td>
+              <td>MATHEMATICS</td>
+            </tr>
+            <tr>
+              <td>2:00PM - 3:30PM</td>
+              <td>KISWAHILI</td>
+              <td>SCIENCE</td>
+              <td>ENGLISH</td>
+              <td>KISWAHILI</td>
+              <td>ENGLISH</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Media Section -->
+      <section id="media">
+        <h2>HTML5 Media - Rich Content</h2>
+
+        <h3>Images</h3>
+        <figure>
+          <img
+            src="mypic.jpg"
+            alt="Learning HTML5 - A student working on web development"
+            width="400"
+            height="350"
+          />
+          <figcaption>This is my image</figcaption>
+        </figure>
+
+        <h3>Audio Content</h3>
+        <audio controls>
+          <source src="sample-audio.mp3" type="audio/mpeg" />
+          <source src="sample-audio.ogg" type="audio/ogg" />
+          Your browser does not support the audio element.
+        </audio>
+        <p><em>Note: Audio file would be included in a real project</em></p>
+
+        <h3>Video Content</h3>
+        <video width="400" height="300" controls>
+          <source src="sample-video.mp4" type="video/mp4" />
+          <source src="sample-video.webm" type="video/webm" />
+          Your browser does not support the video element.
+        </video>
+        <p><em>Note: Video file would be included in a real project</em></p>
+
+        <h3>Embedded Content</h3>
+        <iframe
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          width="400"
+          height="300"
+          title="Sample YouTube Video"
+        >
+          Your browser does not support iframes.
+        </iframe>
+      </section>
+
+      <!-- Form Section -->
+      <section id="form">
+        <h2>HTML5 Form with Validation</h2>
+        <p>
+          This form demonstrates various HTML5 input types and validation
+          features as learnt in the lesson
+        </p>
+
+        <form action="#" method="post" novalidate>
+          <!-- Personal Information Fieldset -->
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="firstname">First Name:</label>
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              required
+              minlength="2"
+              maxlength="50"
+              placeholder="Enter your first name"
+              autocomplete="given-name"
+            />
+            <br /><br />
+
+            <label for="lastname">Last Name:</label>
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              required
+              minlength="2"
+              maxlength="50"
+              placeholder="Enter your last name"
+              autocomplete="family-name"
+            />
+            <br /><br />
+
+            <label for="email">Email Address:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="your.email@example.com"
+              autocomplete="email"
+            />
+            <br /><br />
+
+            <label for="phone">Phone Number:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="123-456-7890"
+              autocomplete="tel"
+            />
+            <br /><br />
+
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate" required />
+            <br /><br />
+
+            <label for="age">Age:</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="13"
+              max="120"
+              placeholder="Enter your age"
+            />
+            <br /><br />
+          </fieldset>
+
+          <!-- Address Information Fieldset -->
+          <fieldset>
+            <legend>Address Information</legend>
+
+            <label for="street">Street Address:</label>
+            <input
+              type="text"
+              id="street"
+              name="street"
+              required
+              placeholder="123 Main Street"
+              autocomplete="street-address"
+            />
+            <br /><br />
+
+            <label for="city">City:</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              required
+              placeholder="Your City"
+              autocomplete="address-level2"
+            />
+            <br /><br />
+
+            <label for="state">Region/province:</label>
+            <select id="state" name="state" required>
+              <option value="">Select your Region</option>
+              <option value="AL">North eastern</option>
+              <option value="AK">central-north province</option>
+              <option value="AZ">central kenya</option>
+              <option value="AR">coast</option>
+              <option value="CA">Nairobi</option>
+              <option value="CO">Western Region</option>
+              <option value="CT">Nyanza region</option>
+              <option value="DE">Rift valley region</option>
+            </select>
+            <br /><br />
+
+            <label for="zipcode">ZIP Code:</label>
+            <input
+              type="text"
+              id="zipcode"
+              name="zipcode"
+              pattern="[0-9]{5}"
+              placeholder="12345"
+              autocomplete="postal-code"
+            />
+            <br /><br />
+          </fieldset>
+
+          <!-- Preferences Fieldset -->
+          <fieldset>
+            <legend>Preferences & Interests</legend>
+
+            <label for="website">Personal Website:</label>
+            <input
+              type="url"
+              id="website"
+              name="website"
+              placeholder="https://www.example.com"
+            />
+            <br /><br />
+
+            <label for="experience">Years of Experience:</label>
+            <input
+              type="range"
+              id="experience"
+              name="experience"
+              min="0"
+              max="20"
+              value="5"
+            />
+            <span id="experience-value">5 years</span>
+            <br /><br />
+
+            <label>Programming Languages Known:</label><br />
+            <input type="checkbox" id="html" name="languages" value="html" />
+            <label for="html">HTML5</label><br />
+
+            <input type="checkbox" id="css" name="languages" value="css" />
+            <label for="css">CSS3</label><br />
+
+            <input
+              type="checkbox"
+              id="javascript"
+              name="languages"
+              value="javascript"
+            />
+            <label for="javascript">JavaScript</label><br />
+
+            <input
+              type="checkbox"
+              id="python"
+              name="languages"
+              value="python"
+            />
+            <label for="python">Python</label><br />
+
+            <input type="checkbox" id="java" name="languages" value="java" />
+            <label for="java">c ++ </label><br /><br />
+
+            <label>Skill Level:</label><br />
+            <input
+              type="radio"
+              id="beginner"
+              name="skill_level"
+              value="beginner"
+              required
+            />
+            <label for="beginner">Beginner</label><br />
+
+            <input
+              type="radio"
+              id="intermediate"
+              name="skill_level"
+              value="intermediate"
+            />
+            <label for="intermediate">Intermediate</label><br />
+
+            <input
+              type="radio"
+              id="advanced"
+              name="skill_level"
+              value="advanced"
+            />
+            <label for="advanced">Advanced</label><br /><br />
+
+            <label for="favorite_color">Favorite Color:</label>
+            <input
+              type="color"
+              id="favorite_color"
+              name="favorite_color"
+              value="#0000ff"
+            />
+            <br /><br />
+
+            <label for="profile_picture">Profile Picture:</label>
+            <input
+              type="file"
+              id="profile_picture"
+              name="profile_picture"
+              accept="image/*"
+            />
+            <br /><br />
+          </fieldset>
+
+          <!-- Additional Information Fieldset -->
+          <fieldset>
+            <legend>Additional Information</legend>
+
+            <label for="bio">Bio/About Me:</label><br />
+            <textarea
+              id="bio"
+              name="bio"
+              rows="4"
+              cols="50"
+              placeholder="Tell us about yourself..."
+              maxlength="500"
+            ></textarea>
+            <br /><br />
+
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              minlength="8"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              placeholder="Enter a strong password"
+            />
+            <br /><br />
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirm_password"
+              name="confirm_password"
+              required
+              placeholder="Confirm your password"
+            />
+            <br /><br />
+
+            <label for="newsletter">Subscribe to Newsletter:</label>
+            <input
+              type="checkbox"
+              id="newsletter"
+              name="newsletter"
+              value="yes"
+              checked
+            />
+            <br /><br />
+
+            <label for="terms">I agree to the Terms and Conditions:</label>
+            <input
+              type="checkbox"
+              id="terms"
+              name="terms"
+              value="agree"
+              required
+            />
+            <br /><br />
+          </fieldset>
+
+          <!-- Form Buttons -->
+          <fieldset>
+            <legend>Submit Form</legend>
+
+            <button type="submit">Submit Registration</button>
+            <button type="reset">Clear Form</button>
+            <button type="button">Preview Data</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
